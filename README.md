@@ -1,5 +1,5 @@
 # Static Portfolio Website
-A clean design for a portfolio website. Feel free to adjust files according to your preferences.
+A clean design for a portfolio website. Feel free to edit the files according to your preferences.
 
 **Notes**
 
