@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,1000");
+
+:root {
+    --background-color: rgb(155, 155, 157);
+    --transition-time: 0.3s;
+    --background-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    --main-font: "DM Sans";
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+    background-color: var(--background-color);
+    user-select: none;
+}
+
+#image-modal-container {
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#image-modal-container #close-button {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 50px;
+    font-weight: 1000;
+    transition: var(--transition-time);
+}
+
+#image-modal-container #close-button:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+#image-modal-container #modal-view {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-modal-container #modal-view #modal-image {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+#main-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#gallery-container {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+#gallery-container .gallery-item {
+    width: 400px;
+    height: 600px;
+    margin: 0px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1%;
+    box-shadow: var(--background-shadow);
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: var(--transition-time);
+}
+
+#gallery-container .gallery-item:hover {
+    filter: brightness(80%);
+}
+
+#gallery-container .gallery-item .image-container {
+    width: 90%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: var(--transition-time);
+}
+
+#gallery-container .gallery-item .image-container .side-bar {
+    width: 250px;
+    height: 200px;
+    border-radius: 0% 10% 10% 0%;
+    margin-left: 100%;
+    overflow: hidden;
+    opacity: 0.9;
+    background-color: #ffffff;
+    transition: var(--transition-time);
+}
+
+#gallery-container .gallery-item .image-container .side-bar .title-date {
+    width: 80%;
+    height: 20%;
+    padding: 0px;
+    margin: 15%;
+    overflow: hidden;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 1000;
+    color: #000000;
+}
+
+#gallery-container .gallery-item .image-container .side-bar .description {
+    width: 80%;
+    height: 50%;
+    padding: 0px;
+    margin: 15%;
+    overflow: hidden;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+
+#gallery-container .gallery-item:nth-child(1) .image-container {
+    background-image: url("/resources/resources-media/showcase-image-1.jpg");
+}
+
+#gallery-container .gallery-item:nth-child(2) .image-container {
+    background-image: url("/resources/resources-media/showcase-image-2.jpg");
+}
+
+#gallery-container .gallery-item:nth-child(3) .image-container {
+    background-image: url("/resources/resources-media/showcase-image-3.jpg");
+}
+
+#gallery-container .gallery-item:nth-child(4) .image-container {
+    background-image: url("/resources/resources-media/showcase-image-4.jpg");
+}
+
+#gallery-container .gallery-item:nth-child(5) .image-container {
+    background-image: url("/resources/resources-media/showcase-image-5.jpg");
+}
+
+#gallery-container .gallery-item:nth-child(6) .image-container {
+    background-image: url("/resources/resources-media/showcase-image-6.jpg");
+}
+
+@media only screen and (max-width: 700px) {
+    #gallery-container .gallery-item {
+        width: 200px;
+        height: 300px;
+        margin-bottom: 25px;
+    }
+
+    #gallery-container .gallery-item .image-container .side-bar {
+        width: 125px;
+        height: 100px;
+    }
+
+    #gallery-container .gallery-item .image-container .side-bar .title-date {
+        font-size: 8px;
+    }
+
+    #gallery-container .gallery-item .image-container .side-bar .description {
+        font-size: 7px;
+    }
+}
