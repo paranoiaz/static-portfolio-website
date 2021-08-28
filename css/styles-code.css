@@ -99,7 +99,7 @@ html, body {
 }
 
 #main-screen #grid-container .url-wrapper:nth-child(2) .image-container {
-    background-image: url(../"resources/resources-code/showcase-image-project-2.png");
+    background-image: url("../resources/resources-code/showcase-image-project-2.png");
 }
 
 #main-screen #grid-container .url-wrapper:nth-child(3) .image-container {
