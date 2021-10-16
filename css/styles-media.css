@@ -160,6 +160,10 @@ html, body {
     background-image: url("../resources/resources-media/showcase-image-6.jpg");
 }
 
+#gallery-container .gallery-item:nth-child(7) .image-container {
+    background-image: url("../resources/resources-media/showcase-image-7.jpg");
+}
+
 @media only screen and (max-width: 700px) {
     #gallery-container .gallery-item {
         width: 200px;
