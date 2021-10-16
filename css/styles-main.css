@@ -50,6 +50,7 @@ html, body {
     user-select: none;
     color: #ffffff;
     float: left;
+    text-shadow: #000000 0px 0px 1px, #000000 0px 0px 1px, #000000 0px 0px 1px, #000000 0px 0px 1px, #000000 0px 0px 1px, #000000 0px 0px 1px;
 }
 
 #main-screen #home-section #text-container #cursor-static {
