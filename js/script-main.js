@@ -1,4 +1,4 @@
-const TITLES = ["DEVELOPER", "CREATOR", "PHOTOGRAPHER", "CLICK TO ENTER"];
+const TITLES = ["TITLE_1", "TITLE_2", "TITLE_3", "CLICK TO ENTER"];
 const SPEED = 1;
 
 window.onclick = () => {
